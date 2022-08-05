@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities */
+
+body {
+  background-color: #141414;
+  color: #ececec;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* nav */
+nav {
+  padding: 1rem 0;
+  border-bottom: 1px solid #5b5b5b;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links-left,
+.nav-links-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+}
+
+.log-in,
+.sign-up {
+  color: #5b5b5b;
+}
+
+.pri-btn {
+  padding: 0.75rem 2rem;
+  background-color: #006be6;
+  color: #fefefe;
+  border-radius: 2rem;
+}
+
+.new-post {
+  font-size: 0.9rem;
+}
+
+/* content */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  column-gap: 2rem;
+}
+
+/* sidebar */
+
+aside {
+  max-height: calc(100vh - 68px);
+  padding: 2rem 0;
+  width: 180px;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+aside {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.links-title {
+  color: #5b5b5b;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+}
+
+.sidebar-links {
+  margin-bottom: 1rem;
+}
+
+.sidebar-link {
+  display: block;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+  color: #ececec;
+  text-transform: capitalize;
+}
+
+.sidebar-link:hover {
+  background-color: #3a3a3a;
+}
+
+.sidebar-link-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.star {
+  color: #303030;
+}
+
+/* main content */
+
+main {
+  padding-top: 4rem;
+  height: calc(100vh - 68px);
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+main {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.popular-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.popular-tag {
+  padding: 0.5rem 1rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ececec;
+  font-weight: 600;
+}
+
+.trending-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.trending-tag {
+  padding: 0.5rem 1rem;
+  background-color: #5b5b5b;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ececec;
+  font-weight: 600;
+}
+
+/* posts */
+
+.post {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.post-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.post-top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time {
+  color: #3a3a3a;
+  font-size: 0.875rem;
+}
+
+.post-top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #5b5b5b;
+}
+
+.post-profile-img {
+  border-radius: 50%;
+}
+
+.post-title {
+  margin-bottom: 0.5rem;
+}
+
+.post-img {
+  margin-bottom: 0.5rem;
+}
+
+.post-img > img {
+  width: 100%;
+}
+
+.post-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  background-color: #5b5b5b;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ececec;
+  font-weight: 600;
+}
+
+.upvote-share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upvote,
+.share {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.upvote-btn,
+.downvote-btn,
+.comment-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #5b5b5b;
+  border-radius: 2px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ececec;
+}
+
+.share-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ececec;
+}
+
+.fb-share-btn {
+  background-color: #4267b2;
+}
+
+.pt-share-btn {
+  background-color: #e60023;
+}
