@@ -76,7 +76,8 @@ nav {
 }
 
 .search {
-  width: 25rem;
+  max-width: 25rem;
+  width: 100%;
   background-color: #303030;
   border-radius: 4rem;
   position: relative;
@@ -202,4 +203,39 @@ aside {
 
 .star {
   color: #303030;
+}
+
+.nav-mobile-links {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .log-in,
+  .sign-up,
+  .pri-btn {
+    display: none;
+  }
+
+  .nav-mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: -1rem;
+  }
+
+  .nav-mobile-link {
+    display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  .search {
+    display: none;
+  }
+
+  .nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

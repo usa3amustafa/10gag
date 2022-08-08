@@ -51,19 +51,19 @@ main {
 
 /* posts */
 
-.post {
+.homepage-post {
   padding-bottom: 2rem;
   border-bottom: 1px solid #3a3a3a;
 }
 
-.post-top-bar {
+.homepage-post-top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
 }
 
-.post-top-bar-left {
+.homepage-post-top-bar-left {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -74,34 +74,37 @@ main {
   font-size: 0.875rem;
 }
 
-.post-top-bar-right {
+.homepage-post-top-bar-right {
   display: flex;
   align-items: center;
   gap: 1rem;
   color: #5b5b5b;
 }
 
-.post-profile-img {
+.homepage-post-profile-img {
   border-radius: 50%;
 }
 
-.post-title {
+.homepage-post-title {
   margin-bottom: 0.5rem;
 }
 
-.post-img {
+.homepage-post-img {
   margin-bottom: 0.5rem;
+  padding: 0 2rem;
+  background-color: #000;
 }
 
-.post-img > img {
+.homepage-post-img > img {
   width: 100%;
 }
 
-.post-tags {
+.homepage-post-tags {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -153,4 +156,12 @@ main {
 
 .pt-share-btn {
   background-color: #e60023;
+}
+
+@media (max-width: 560px) {
+  .upvote-share {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }

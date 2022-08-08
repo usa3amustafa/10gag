@@ -3,6 +3,8 @@
   margin: 0 auto;
 
   margin-top: 6rem;
+
+  margin-bottom: 6rem;
 }
 
 .profile-info {
@@ -11,6 +13,8 @@
   gap: 4rem;
 
   margin-bottom: 2rem;
+
+  padding: 1rem;
 }
 
 .profile-img {
@@ -57,10 +61,99 @@
 .profile-details {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .post-count,
 .followers-count,
 .following-count {
   font-weight: 600;
+}
+
+.profile-content {
+  margin-top: 4rem;
+}
+
+.profile-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fefefe;
+}
+
+.profile-content-categories {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-content-category {
+  color: #fefefe;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.profile-content-category.active {
+  border-bottom: 2px solid #fefefe;
+}
+
+.profile-content-more-options {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.profile-posts-container {
+  background-color: #000;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.profile-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+
+@media (max-width: 560px) {
+  .profile-info {
+    gap: 1rem;
+  }
+
+  .profile-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .profile-img i {
+    font-size: 2rem;
+  }
+
+  .profile-desc-header {
+    gap: 0.5rem;
+  }
+
+  .profile-settings-icon {
+    font-size: 1rem;
+  }
+
+  .edit-profile-btn {
+    display: none;
+  }
+
+  .total-posts,
+  .total-followers,
+  .total-following {
+    font-size: 0.75rem;
+  }
+
+  .profile-content-categories {
+    gap: 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .profile-details {
+    gap: 0.5rem;
+  }
 }
