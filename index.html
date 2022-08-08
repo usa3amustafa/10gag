@@ -24,7 +24,10 @@
     />
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- homepage.css -->
+    <link rel="stylesheet" href="homepage.css" />
 
     <!-- scripts -->
     <script src="./app.js" defer></script>
@@ -36,33 +39,23 @@
         <ul class="nav-links-left">
           <i class="fa-solid fa-bars hamburger"></i>
           <li><h2 class="logo">10GAG</h2></li>
-          <li>
-            <a href="#" class="nav-link"
-              ><i class="fa-solid fa-shuffle shuffle"></i>&nbsp;shuffle</a
-            >
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-mobile-screen-button app"></i>&nbsp;get
-              app</a
-            >
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-skull-crossbones memeland"></i
-              >&nbsp;memeland</a
-            >
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-pizza-slice potato"></i>&nbsp;potatoz</a
-            >
-          </li>
         </ul>
+        <div class="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search Your Favourite"
+          />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
         <ul class="nav-links-right">
           <li><a href="#" class="nav-link log-in">log in</a></li>
           <li><a href="#" class="nav-link sign-up">sign up</a></li>
-          <li><a href="#" class="nav-link">profile</a></li>
+          <li class="user">
+            <a href="./profile.html" class="nav-link"
+              ><i class="fa-solid fa-user user-icon"></i
+            ></a>
+          </li>
           <li>
             <a href="#" class="nav-link pri-btn"
               ><i class="fa-solid fa-pencil new-post"></i>&nbsp;&nbsp;post</a
@@ -72,834 +65,832 @@
       </div>
     </nav>
 
-    <!-- sidebar -->
-    <div class="container">
-      <aside>
-        <div class="sidebar">
-          <!-- aside links home -->
-          <h3 class="links-title">10GAG</h3>
-          <ul class="sidebar-links">
-            <li>
-              <a href="#" class="sidebar-link"
-                ><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;hot</a
-              >
-            </li>
-            <li>
-              <a href="#" class="sidebar-link"
-                ><i class="fa-solid fa-arrow-trend-up"></i
-                >&nbsp;&nbsp;&nbsp;trending</a
-              >
-            </li>
-            <li>
-              <a href="#" class="sidebar-link"
-                ><i class="fa-solid fa-arrow-rotate-right"></i
-                >&nbsp;&nbsp;&nbsp;fresh</a
-              >
-            </li>
-            <li>
-              <a href="#" class="sidebar-link"
-                ><i class="fa-solid fa-chart-simple"></i
-                >&nbsp;&nbsp;&nbsp;top</a
-              >
-            </li>
-          </ul>
+    <main>
+      <div class="container main">
+        <aside>
+          <div class="sidebar">
+            <!-- aside links home -->
+            <h3 class="links-title">10GAG</h3>
+            <ul class="sidebar-links">
+              <li>
+                <a href="#" class="sidebar-link"
+                  ><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;hot</a
+                >
+              </li>
+              <li>
+                <a href="#" class="sidebar-link"
+                  ><i class="fa-solid fa-arrow-trend-up"></i
+                  >&nbsp;&nbsp;&nbsp;trending</a
+                >
+              </li>
+              <li>
+                <a href="#" class="sidebar-link"
+                  ><i class="fa-solid fa-arrow-rotate-right"></i
+                  >&nbsp;&nbsp;&nbsp;fresh</a
+                >
+              </li>
+              <li>
+                <a href="#" class="sidebar-link"
+                  ><i class="fa-solid fa-chart-simple"></i
+                  >&nbsp;&nbsp;&nbsp;top</a
+                >
+              </li>
+            </ul>
 
-          <!-- aside links popular -->
-          <h3 class="links-title">popular</h3>
-          <ul class="sidebar-links">
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-          </ul>
+            <!-- aside links popular -->
+            <h3 class="links-title">popular</h3>
+            <ul class="sidebar-links">
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+            </ul>
 
-          <!-- aside links all section -->
-          <h3 class="links-title">All sections</h3>
-          <ul class="sidebar-links">
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >hot<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >trending<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >fresh<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="sidebar-link sidebar-link-2"
-                >top<i class="fa-solid fa-star star"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-    </div>
-
-    <div class="content container">
-      <!-- content  -->
-      <main>
-        <div class="container main-content">
-          <!-- popular -->
-          <div class="popular-tags">
-            <a href="#" class="popular-tag">News</a>
-            <a href="#" class="popular-tag">Ukraine</a>
-            <a href="#" class="popular-tag">Anime</a>
-            <a href="#" class="popular-tag">Games</a>
-            <a href="#" class="popular-tag">LifeStyle</a>
-            <a href="#" class="popular-tag">pretty girls</a>
-            <a href="#" class="popular-tag">pretty girls</a>
-            <a href="#" class="popular-tag">pretty girls</a>
+            <!-- aside links all section -->
+            <h3 class="links-title">All sections</h3>
+            <ul class="sidebar-links">
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >hot<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >trending<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >fresh<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link sidebar-link-2"
+                  >top<i class="fa-solid fa-star star"></i
+                ></a>
+              </li>
+            </ul>
           </div>
+        </aside>
 
-          <!-- trending -->
-          <div class="trending-tags">
-            <a href="#" class="trending-tag">News</a>
-            <a href="#" class="trending-tag">Ukraine</a>
-            <a href="#" class="trending-tag">Anime</a>
-            <a href="#" class="trending-tag">Games</a>
-            <a href="#" class="trending-tag">LifeStyle</a>
-            <a href="#" class="trending-tag">pretty girls</a>
-            <a href="#" class="trending-tag">pretty girls</a>
-            <a href="#" class="trending-tag">pretty girls</a>
-          </div>
+        <div class="main-content-main">
+          <div class="main-content">
+            <!-- popular -->
+            <div class="popular-tags">
+              <a href="#" class="popular-tag">News</a>
+              <a href="#" class="popular-tag">Ukraine</a>
+              <a href="#" class="popular-tag">Anime</a>
+              <a href="#" class="popular-tag">Games</a>
+              <a href="#" class="popular-tag">LifeStyle</a>
+              <a href="#" class="popular-tag">pretty girls</a>
+              <a href="#" class="popular-tag">pretty girls</a>
+              <a href="#" class="popular-tag">pretty girls</a>
+            </div>
 
-          <!-- posts -->
-          <div class="posts">
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+            <!-- trending -->
+            <div class="trending-tags">
+              <a href="#" class="trending-tag">News</a>
+              <a href="#" class="trending-tag">Ukraine</a>
+              <a href="#" class="trending-tag">Anime</a>
+              <a href="#" class="trending-tag">Games</a>
+              <a href="#" class="trending-tag">LifeStyle</a>
+              <a href="#" class="trending-tag">pretty girls</a>
+              <a href="#" class="trending-tag">pretty girls</a>
+              <a href="#" class="trending-tag">pretty girls</a>
+            </div>
+
+            <!-- posts -->
+            <div class="posts">
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- post -->
-            <article class="post">
-              <!-- top bar -->
-              <div class="post-top-bar">
-                <div class="post-top-bar-left">
-                  <img
-                    src="./img/profile-img.jpg"
-                    alt="profile-img"
-                    width="25"
-                    class="post-profile-img"
-                  />
-                  <p class="username">diegovaldiviae</p>
-                  <p class="time">2h</p>
+              </article>
+              <!-- post -->
+              <article class="post">
+                <!-- top bar -->
+                <div class="post-top-bar">
+                  <div class="post-top-bar-left">
+                    <img
+                      src="./img/profile-img.jpg"
+                      alt="profile-img"
+                      width="25"
+                      class="post-profile-img"
+                    />
+                    <p class="username">diegovaldiviae</p>
+                    <p class="time">2h</p>
+                  </div>
+                  <div class="post-top-bar-right">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
                 </div>
-                <div class="post-top-bar-right">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- post title -->
+                <h2 class="post-title">Hmmm</h2>
+                <!-- media -->
+                <div class="post-img">
+                  <img src="./img/post-img.webp" alt="" />
                 </div>
-              </div>
-              <!-- post title -->
-              <h2 class="post-title">Hmmm</h2>
-              <!-- media -->
-              <div class="post-img">
-                <img src="./img/post-img.webp" alt="" />
-              </div>
-              <!-- tags -->
-              <div class="post-tags">
-                <a href="#" class="tag">funny</a>
-                <a href="#" class="tag">the deep</a>
-                <a href="#" class="tag">thr boys</a>
-              </div>
-              <!-- upvote and share -->
-              <div class="upvote-share">
-                <div class="upvote">
-                  <a href="#" class="upvote-btn"
-                    ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
-                  >
-                  <a href="#" class="downvote-btn"
-                    ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
-                  >
-                  <a href="#" class="comment-btn"
-                    ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
-                  >
+                <!-- tags -->
+                <div class="post-tags">
+                  <a href="#" class="tag">funny</a>
+                  <a href="#" class="tag">the deep</a>
+                  <a href="#" class="tag">thr boys</a>
                 </div>
-                <div class="share">
-                  <a class="share-btn fb-share-btn"
-                    ><i class="fa-brands fa-facebook"></i
-                    >&nbsp;&nbsp;Facebook</a
-                  >
-                  <a class="share-btn pt-share-btn"
-                    ><i class="fa-brands fa-pinterest"></i
-                    >&nbsp;&nbsp;Pinterest</a
-                  >
+                <!-- upvote and share -->
+                <div class="upvote-share">
+                  <div class="upvote">
+                    <a href="#" class="upvote-btn"
+                      ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+                    >
+                    <a href="#" class="downvote-btn"
+                      ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+                    >
+                    <a href="#" class="comment-btn"
+                      ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+                    >
+                  </div>
+                  <div class="share">
+                    <a class="share-btn fb-share-btn"
+                      ><i class="fa-brands fa-facebook"></i
+                      >&nbsp;&nbsp;Facebook</a
+                    >
+                    <a class="share-btn pt-share-btn"
+                      ><i class="fa-brands fa-pinterest"></i
+                      >&nbsp;&nbsp;Pinterest</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
