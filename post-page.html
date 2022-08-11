@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>10GAG - Profile</title>
+    <title>FlatMint - Post Page</title>
 
     <!-- font awsome -->
     <link
@@ -26,8 +26,11 @@
     <!-- styles css -->
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- post css -->
+    <link rel="stylesheet" href="homepage.css" />
+
     <!-- profile css -->
-    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="post-page.css" />
 
     <!-- scripts -->
     <script src="./app.js" defer></script>
@@ -82,7 +85,7 @@
             >
           </div>
 
-          <h3 class="links-title">10GAG</h3>
+          <h3 class="links-title">FlatMint</h3>
           <ul class="sidebar-links">
             <li>
               <a href="#" class="sidebar-link"
@@ -310,113 +313,221 @@
           </ul>
         </div>
       </aside>
-    </div>
 
-    <!-- profile -->
-    <div class="container">
-      <div class="profile-container">
-        <div class="profile-info">
-          <div class="profile-img">
-            <i class="fa-solid fa-user"></i>
-          </div>
-
-          <div class="profile-desc">
-            <div class="profile-desc-header">
-              <h2 class="profile-username">john doe</h2>
-              <a href="#" class="edit-profile-btn btn">Edit Profile</a>
-              <i class="fa-solid fa-gear profile-settings-icon"></i>
+      <div class="post-main">
+        <!-- homepage-post -->
+        <article class="homepage-post">
+          <!-- top bar -->
+          <div class="homepage-post-top-bar">
+            <div class="homepage-post-top-bar-left">
+              <img
+                src="./img/profile-img.jpg"
+                alt="profile-img"
+                width="25"
+                class="homepage-post-profile-img"
+              />
+              <p class="username">diegovaldiviae</p>
+              <p class="time">2h</p>
             </div>
-
-            <div class="profile-details">
-              <p class="total-posts">
-                <span class="posts-count">41 </span>Posts
-              </p>
-              <p class="total-followers">
-                <span class="followers-count">200</span> Followers
-              </p>
-              <p class="total-following">
-                <span class="following-count">21</span> Following
-              </p>
+            <div class="homepage-post-top-bar-right">
+              <i class="fa-solid fa-cloud-arrow-down"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
           </div>
-        </div>
-
-        <div class="profile-content">
-          <div class="profile-content-header">
-            <div class="profile-content-categories">
-              <a href="#" class="profile-content-category active">Posts</a>
-              <a href="#" class="profile-content-category">Comments</a>
-              <a href="#" class="profile-content-category">Upvotes</a>
-              <a href="#" class="profile-content-category">Saved</a>
-            </div>
-
-            <i
-              class="fa-solid fa-ellipsis-vertical profile-content-more-options"
-            ></i>
+          <!-- homepage-post title -->
+          <h2 class="homepage-post-title">Hmmm</h2>
+          <!-- media -->
+          <div class="homepage-post-img">
+            <a href="./post-page.html">
+              <img src="./img/homepage-post-img.webp" alt="" />
+            </a>
           </div>
-        </div>
+          <!-- tags -->
+          <div class="homepage-post-tags">
+            <a href="#" class="tag">funny</a>
+            <a href="#" class="tag">the deep</a>
+            <a href="#" class="tag">thr boys</a>
+          </div>
+          <!-- upvote and share -->
+          <div class="upvote-share">
+            <div class="upvote">
+              <a href="#" class="upvote-btn"
+                ><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;759</a
+              >
+              <a href="#" class="downvote-btn"
+                ><i class="fa-solid fa-arrow-down"></i> &nbsp;&nbsp;22</a
+              >
+              <a href="#" class="comment-btn"
+                ><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;52</a
+              >
+            </div>
+            <div class="share">
+              <a class="share-btn fb-share-btn"
+                ><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</a
+              >
+              <a class="share-btn pt-share-btn"
+                ><i class="fa-brands fa-pinterest"></i>&nbsp;&nbsp;Pinterest</a
+              >
+            </div>
+          </div>
+        </article>
+        <!-- comment box -->
+        <div class="comments">
+          <!-- new comment -->
+          <div class="new-comment">
+            <textarea
+              name="comment-box"
+              id="comment-box"
+              cols="30"
+              rows="3"
+              class="write-new-comment"
+              placeholder="Write a Comment"
+            ></textarea>
+            <div class="post-comment-btn-container">
+              <button class="btn pri-btn post-comment-btn">Post Comment</button>
+            </div>
+          </div>
 
-        <div class="profile-posts-container">
-          <div class="profile-posts">
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
+          <!-- existing comments -->
+          <div class="existing-comments">
+            <div class="existing-comment">
+              <div class="existing-comment-header">
+                <div class="existing-comment-header-left-col">
+                  <img src="./img/profile-img.jpg" alt="" class="user-img" />
+
+                  <h4 class="user-name">diegovaldiviae</h4>
+                  <p class="time-ago">2h ago</p>
+                </div>
+                <div class="existing-comment-header-right-col">
+                  <div class="likes">
+                    <i class="fa-regular fa-thumbs-up likes-icon"></i>
+                    <p class="likes-count">280</p>
+                  </div>
+                  <div class="dislikes">
+                    <i class="fa-regular fa-thumbs-down dislikes-icon"></i>
+                    <p class="dislikes-count">193</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="existing-comment-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                suscipit nesciunt adipisci autem esse, cumque eveniet sit
+                deserunt doloribus rerum? Recusandae optio quo odit veritatis
+                deleniti harum quia, facere possimus.
+              </p>
             </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
+
+            <div class="existing-comment">
+              <div class="existing-comment-header">
+                <div class="existing-comment-header-left-col">
+                  <img src="./img/profile-img.jpg" alt="" class="user-img" />
+
+                  <h4 class="user-name">diegovaldiviae</h4>
+                  <p class="time-ago">2h ago</p>
+                </div>
+                <div class="existing-comment-header-right-col">
+                  <div class="likes">
+                    <i class="fa-regular fa-thumbs-up likes-icon"></i>
+                    <p class="likes-count">280</p>
+                  </div>
+                  <div class="dislikes">
+                    <i class="fa-regular fa-thumbs-down dislikes-icon"></i>
+                    <p class="dislikes-count">193</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="existing-comment-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                suscipit nesciunt adipisci autem esse, cumque eveniet sit
+                deserunt doloribus rerum? Recusandae optio quo odit veritatis
+                deleniti harum quia, facere possimus.
+              </p>
             </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
+
+            <div class="existing-comment">
+              <div class="existing-comment-header">
+                <div class="existing-comment-header-left-col">
+                  <img src="./img/profile-img.jpg" alt="" class="user-img" />
+
+                  <h4 class="user-name">diegovaldiviae</h4>
+                  <p class="time-ago">2h ago</p>
+                </div>
+                <div class="existing-comment-header-right-col">
+                  <div class="likes">
+                    <i class="fa-regular fa-thumbs-up likes-icon"></i>
+                    <p class="likes-count">280</p>
+                  </div>
+                  <div class="dislikes">
+                    <i class="fa-regular fa-thumbs-down dislikes-icon"></i>
+                    <p class="dislikes-count">193</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="existing-comment-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                suscipit nesciunt adipisci autem esse, cumque eveniet sit
+                deserunt doloribus rerum? Recusandae optio quo odit veritatis
+                deleniti harum quia, facere possimus.
+              </p>
             </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
+
+            <div class="existing-comment">
+              <div class="existing-comment-header">
+                <div class="existing-comment-header-left-col">
+                  <img src="./img/profile-img.jpg" alt="" class="user-img" />
+
+                  <h4 class="user-name">diegovaldiviae</h4>
+                  <p class="time-ago">2h ago</p>
+                </div>
+                <div class="existing-comment-header-right-col">
+                  <div class="likes">
+                    <i class="fa-regular fa-thumbs-up likes-icon"></i>
+                    <p class="likes-count">280</p>
+                  </div>
+                  <div class="dislikes">
+                    <i class="fa-regular fa-thumbs-down dislikes-icon"></i>
+                    <p class="dislikes-count">193</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="existing-comment-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                suscipit nesciunt adipisci autem esse, cumque eveniet sit
+                deserunt doloribus rerum? Recusandae optio quo odit veritatis
+                deleniti harum quia, facere possimus.
+              </p>
             </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
-            </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
-            </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
-            </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
-            </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
-            </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
-            </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
-            </div>
-            <div class="profile-post">
-              <a href="./post-page.html">
-                <img src="./img/profile-post-img.webp" alt="" />
-              </a>
+
+            <div class="existing-comment">
+              <div class="existing-comment-header">
+                <div class="existing-comment-header-left-col">
+                  <img src="./img/profile-img.jpg" alt="" class="user-img" />
+
+                  <h4 class="user-name">diegovaldiviae</h4>
+                  <p class="time-ago">2h ago</p>
+                </div>
+                <div class="existing-comment-header-right-col">
+                  <div class="likes">
+                    <i class="fa-regular fa-thumbs-up likes-icon"></i>
+                    <p class="likes-count">280</p>
+                  </div>
+                  <div class="dislikes">
+                    <i class="fa-regular fa-thumbs-down dislikes-icon"></i>
+                    <p class="dislikes-count">193</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="existing-comment-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                suscipit nesciunt adipisci autem esse, cumque eveniet sit
+                deserunt doloribus rerum? Recusandae optio quo odit veritatis
+                deleniti harum quia, facere possimus.
+              </p>
             </div>
           </div>
         </div>

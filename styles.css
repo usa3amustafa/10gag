@@ -73,6 +73,7 @@ nav {
 .hamburger {
   font-size: 1.5rem;
   cursor: pointer;
+  display: none;
 }
 
 .search {
@@ -210,6 +211,10 @@ aside {
 }
 
 @media (max-width: 960px) {
+  .hamburger {
+    display: block;
+  }
+
   .log-in,
   .sign-up,
   .pri-btn {
