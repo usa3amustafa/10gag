@@ -50,38 +50,38 @@
 .existing-comment-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 2rem;
-  margin-bottom: 0.5rem;
 }
 
-.existing-comment-header-left-col {
+.existing-comment-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.existing-comment-header-left-col .user-img {
+.existing-comment-header .user-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.existing-comment-header .user-img {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
 }
 
-.existing-comment-header-left-col .time-ago {
+.existing-comment-header .time-ago {
   font-size: 0.9rem;
   color: #999;
 }
 
-.existing-comment-header-right-col {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.existing-comment-body {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
 }
 
-.existing-comment-body {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  margin: 0 2rem 0 3rem;
+.exisiting-comment-footer {
+  display: flex;
+  gap: 1rem;
 }
 
 .likes,
@@ -107,5 +107,5 @@
 }
 
 .dislikes-icon {
-  color: #dd0000;
+  color: #aa4a44;
 }

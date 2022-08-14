@@ -32,6 +32,10 @@ ul {
   padding: 0.5rem 1rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* nav */
 
 nav {
@@ -210,6 +214,194 @@ aside {
   display: none;
 }
 
+/* sign up modal */
+.overlay {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  inset: 0 0 0 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  z-index: 300;
+}
+
+.modal {
+  max-width: 600px;
+  width: 90%;
+
+  background-color: #0e0e0e;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1);
+
+  z-index: 500;
+}
+
+.close-modal {
+  font-size: 1.5rem;
+
+  position: absolute;
+
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.signup-close-modal {
+  right: 5%;
+  top: 5%;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-logo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-tagline {
+  font-size: 0.75rem;
+  color: #5b5b5b;
+  text-align: center;
+  max-width: 30ch;
+  margin: 0 auto;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #303030;
+}
+
+.dot.active {
+  background-color: #5b5b5b;
+}
+
+.modal-disclaimer-line {
+  font-size: 0.75rem;
+  color: #5b5b5b;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.continue-with {
+  padding: 1rem 0;
+  text-align: center;
+  border: 1px solid #5b5b5b;
+  border-radius: 2rem;
+}
+
+.continue-with-desc {
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+}
+
+.continue-with-desc::before {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.continue-with-facebook::before {
+  font: var(--fa-font-brands);
+  content: '\f09a';
+  color: #4267b2;
+}
+.continue-with-google::before {
+  font: var(--fa-font-brands);
+  content: '\f1a0';
+  color: #3cba54;
+}
+.continue-with-apple::before {
+  font: var(--fa-font-brands);
+  content: '\f179';
+  color: #555555;
+}
+
+.continue-with-email::before {
+  content: none;
+}
+
+.continue-with + .continue-with {
+  margin-top: 0.5rem;
+}
+
+.already-member {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #fefefe;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* login modal */
+.login-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #303030;
+}
+.login-close-modal {
+  cursor: pointer;
+}
+.or {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.login-form-field {
+  background-color: #141414;
+  border: 1px solid #303030;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fefefe;
+  border-radius: 2px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+.login-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #006be6;
+  color: #fefefe;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+}
+
 @media (max-width: 960px) {
   .hamburger {
     display: block;
@@ -227,7 +419,7 @@ aside {
     gap: 1rem;
     align-items: center;
     margin-bottom: 2rem;
-    margin-left: -1rem;
+    margin-left: -2rem;
   }
 
   .nav-mobile-link {
@@ -242,5 +434,15 @@ aside {
 
   .nav {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .continue-with-desc {
+    font-size: 0.875rem;
   }
 }
