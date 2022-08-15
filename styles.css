@@ -81,8 +81,9 @@ nav {
 }
 
 .search {
-  max-width: 25rem;
+  max-width: 580px;
   width: 100%;
+  margin: 0 auto;
   background-color: #303030;
   border-radius: 4rem;
   position: relative;
