@@ -22,12 +22,12 @@ main {
 
 .popular-tag {
   padding: 0.5rem 1rem;
-  border: 1px solid #3a3a3a;
+  border: 1px solid var(--text-clr-sec);
   border-radius: 2rem;
   font-size: 0.9rem;
   text-transform: capitalize;
   text-decoration: none;
-  color: #ececec;
+  color: var(--text-clr-pri);
   font-weight: 600;
 }
 
@@ -40,12 +40,12 @@ main {
 
 .trending-tag {
   padding: 0.5rem 1rem;
-  background-color: #5b5b5b;
+  background-color: var(--tag-bg);
   border-radius: 2px;
   font-size: 0.9rem;
   text-transform: capitalize;
   text-decoration: none;
-  color: #ececec;
+  color: var(--text-clr-pri);
   font-weight: 600;
 }
 
@@ -53,7 +53,7 @@ main {
 
 .homepage-post {
   padding-bottom: 2rem;
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid var(--text-clr-sec);
 }
 
 .homepage-post-top-bar {
@@ -70,7 +70,7 @@ main {
 }
 
 .time {
-  color: #3a3a3a;
+  color: var(--text-clr-sec);
   font-size: 0.875rem;
 }
 
@@ -78,7 +78,7 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: #5b5b5b;
+  color: var(--tag-bg);
 }
 
 .homepage-post-profile-img {
@@ -92,7 +92,7 @@ main {
 .homepage-post-img {
   margin-bottom: 0.5rem;
   padding: 0 2rem;
-  background-color: #000;
+  background-color: var(--black-op-1);
 }
 
 .homepage-post-img > img {
@@ -109,12 +109,12 @@ main {
 
 .tag {
   padding: 0.5rem 1rem;
-  background-color: #5b5b5b;
+  background-color: var(--tag-bg);
   border-radius: 2px;
   font-size: 0.9rem;
   text-transform: capitalize;
   text-decoration: none;
-  color: #ececec;
+  color: var(--text-clr-pri);
   font-weight: 600;
 }
 
@@ -135,11 +135,11 @@ main {
 .downvote-btn,
 .comment-btn {
   padding: 0.5rem 1rem;
-  border: 1px solid #5b5b5b;
+  border: 1px solid var(--tag-bg);
   border-radius: 2px;
   font-weight: 600;
   text-decoration: none;
-  color: #ececec;
+  color: var(--text-clr-pri);
 }
 
 .share-btn {
@@ -147,15 +147,15 @@ main {
   border-radius: 2px;
   font-weight: 600;
   text-decoration: none;
-  color: #ececec;
+  color: var(--text-clr-pri);
 }
 
 .fb-share-btn {
-  background-color: #4267b2;
+  background-color: var(--fb-btn-bg);
 }
 
 .pt-share-btn {
-  background-color: #e60023;
+  background-color: var(--pn-btn-bg);
 }
 
 @media (max-width: 560px) {

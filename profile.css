@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3a3a3a;
+  background-color: var(--text-clr-sec);
 }
 
 .profile-img i {
@@ -47,10 +47,10 @@
 }
 
 .edit-profile-btn {
-  color: #fefefe;
+  color: var(--text-clr-pri);
 
   padding: 0.5rem 1rem;
-  border: 1px solid #3a3a3a;
+  border: 1px solid var(--text-clr-sec);
   font-size: 0.9rem;
 }
 
@@ -78,7 +78,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #fefefe;
+  border-bottom: 1px solid var(--text-clr-pri);
 }
 
 .profile-content-categories {
@@ -88,14 +88,14 @@
 }
 
 .profile-content-category {
-  color: #fefefe;
+  color: var(--text-clr-pri);
   font-weight: 500;
   text-decoration: none;
   padding: 0.5rem;
 }
 
 .profile-content-category.active {
-  border-bottom: 2px solid #fefefe;
+  border-bottom: 2px solid var(--text-clr-pri);
 }
 
 .profile-content-more-options {
@@ -104,7 +104,7 @@
 }
 
 .profile-posts-container {
-  background-color: #000;
+  background-color: var(--black-op-1);
   padding: 1rem;
   margin-top: 1rem;
 }

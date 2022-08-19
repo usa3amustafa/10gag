@@ -4,11 +4,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-pri: #141414;
+  --bg-sec: #050505;
+  --text-clr-pri: #fefefe;
+  --text-clr-sec: #3a3a3a;
+  --tag-bg: #5b5b5b;
+  --blue-clr: #006be6;
+  --dislike-clr: #ff4949;
+  --shadow-1: rgb(48, 48, 48, 0.25);
+  --black-op-1: rgba(0, 0, 0, 1);
+  --black-op-8: rgba(0, 0, 0, 0.8);
+  --black-op-25: rgba(0, 0, 0, 0.25);
+  --fb-btn-bg: #4267b2;
+  --pn-btn-bg: #e60023;
+}
+
 /* utilities */
 
 body {
-  background-color: #141414;
-  color: #ececec;
+  background-color: var(--bg-pri);
+  color: var(--text-clr-pri);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -40,13 +56,13 @@ ul {
 
 nav {
   padding: 1rem 0;
-  border-bottom: 1px solid #5b5b5b;
+  border-bottom: 1px solid var(--tag-bg);
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: #141414;
+  background-color: var(--bg-pri);
 }
 
 .nav {
@@ -70,7 +86,7 @@ nav {
 .nav-link {
   text-decoration: none;
   text-transform: capitalize;
-  color: #fefefe;
+  color: var(--text-clr-pri);
   font-weight: 600;
 }
 
@@ -84,7 +100,7 @@ nav {
   max-width: 580px;
   width: 100%;
   margin: 0 auto;
-  background-color: #303030;
+  background-color: var(--text-clr-sec);
   border-radius: 4rem;
   position: relative;
 }
@@ -93,7 +109,7 @@ nav {
   width: 100%;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #303030;
+  background-color: var(--text-clr-sec);
   border: none;
   outline: none;
   border-radius: 1rem;
@@ -104,7 +120,7 @@ nav {
 }
 
 .search-icon {
-  color: #5b5b5b;
+  color: var(--tag-bg);
   position: absolute;
   font-size: 1.25rem;
   right: 5%;
@@ -115,11 +131,11 @@ nav {
 
 .log-in,
 .sign-up {
-  color: #5b5b5b;
+  color: var(--tag-bg);
 }
 
 .user {
-  background-color: #5b5b5b;
+  background-color: var(--tag-bg);
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -137,8 +153,8 @@ nav {
 
 .pri-btn {
   padding: 0.5rem 1.5rem;
-  background-color: #006be6;
-  color: #fefefe;
+  background-color: var(--blue-clr);
+  color: var(--text-clr-pri);
   border-radius: 2rem;
   font-size: 0.9rem;
 }
@@ -153,11 +169,11 @@ aside {
   max-height: calc(100vh - 68px);
   padding: 2rem 0;
   width: 200px;
-  box-shadow: 2px 0px 5px rgb(48, 48, 48, 0.25);
+  box-shadow: 2px 0px 5px var(--shadow-1);
   overflow-y: scroll;
   position: fixed;
   top: 68px;
-  background: #141414;
+  background: var(--bg-pri);
 
   transition: transform 0.3s ease-in-out;
 }
@@ -178,7 +194,7 @@ aside {
 }
 
 .links-title {
-  color: #5b5b5b;
+  color: var(--tag-bg);
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;
 }
@@ -192,13 +208,13 @@ aside {
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   border-radius: 2px;
-  color: #ececec;
+  color: var(--text-clr-pri);
   text-transform: capitalize;
   max-width: 180px;
 }
 
 .sidebar-link:hover {
-  background-color: #3a3a3a;
+  background-color: var(--text-clr-sec);
 }
 
 .sidebar-link-2 {
@@ -208,7 +224,7 @@ aside {
 }
 
 .star {
-  color: #303030;
+  color: var(--text-clr-sec);
 }
 
 .nav-mobile-links {
@@ -223,7 +239,7 @@ aside {
   position: fixed;
   inset: 0 0 0 0;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--black-op-8);
 
   z-index: 2;
 }
@@ -251,7 +267,7 @@ aside {
 
   position: absolute;
 
-  color: #fefefe;
+  color: var(--text-clr-pri);
   cursor: pointer;
 }
 
@@ -271,7 +287,7 @@ aside {
 
 .modal-tagline {
   font-size: 0.75rem;
-  color: #5b5b5b;
+  color: var(--tag-bg);
   text-align: center;
   max-width: 30ch;
   margin: 0 auto;
@@ -293,12 +309,12 @@ aside {
 }
 
 .dot.active {
-  background-color: #5b5b5b;
+  background-color: var(--tag-bg);
 }
 
 .modal-disclaimer-line {
   font-size: 0.75rem;
-  color: #5b5b5b;
+  color: var(--tag-bg);
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -306,7 +322,7 @@ aside {
 .continue-with {
   padding: 1rem 0;
   text-align: center;
-  border: 1px solid #5b5b5b;
+  border: 1px solid var(--tag-bg);
   border-radius: 2rem;
 }
 
@@ -353,7 +369,7 @@ aside {
   display: block;
   margin-top: 2rem;
   text-decoration: none;
-  color: #fefefe;
+  color: var(--text-clr-pri);
   font-weight: 600;
   text-transform: capitalize;
   text-align: center;
@@ -381,11 +397,11 @@ aside {
   gap: 0.75rem;
 }
 .login-form-field {
-  background-color: #141414;
+  background-color: var(--bg-pri);
   border: 1px solid #303030;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: #fefefe;
+  color: var(--text-clr-pri);
   border-radius: 2px;
   font-family: 'Poppins', sans-serif;
   outline: none;
@@ -394,8 +410,8 @@ aside {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #006be6;
-  color: #fefefe;
+  background-color: var(--blue-clr);
+  color: var(--text-clr-pri);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 2rem;
@@ -430,7 +446,7 @@ aside {
 
 .dropdown-link {
   text-decoration: none;
-  color: #fefefe;
+  color: var(--text-clr-pri);
   display: block;
 
   min-width: 15rem;
@@ -448,13 +464,12 @@ aside {
 }
 
 .dark-mode-switch {
-  background: #006be6;
+  background: var(--blue-clr);
   width: 2rem;
   height: 1rem;
   border-radius: 1rem;
-  padding: 0 0.25rem;
-  display: flex;
-  align-items: center;
+
+  position: relative;
 }
 
 .circle {
@@ -463,6 +478,19 @@ aside {
 
   background: #fff;
   border-radius: 1rem;
+
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin: 0 0.25rem;
+
+  transform: translateY(-50%);
+
+  transition: transform 0.2s ease-in;
+}
+
+.move-circle {
+  transform: translate(100%, -50%);
 }
 
 .dropdown-nav-sec-title {
@@ -470,7 +498,7 @@ aside {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  color: #3a3a3a;
+  color: var(--text-clr-sec);
 }
 
 .dropdown-nav-sec-links {
@@ -482,7 +510,7 @@ aside {
   display: inline-block;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  color: #fefefe;
+  color: var(--text-clr-pri);
 }
 
 .show-dropdown-nav-sec-links {
@@ -490,7 +518,7 @@ aside {
 }
 
 .overlay-2 {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--black-op-25);
 
   width: 100vw;
   height: 100vh;

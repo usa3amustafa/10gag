@@ -14,15 +14,15 @@
 }
 
 .write-new-comment {
-  background: #1f1f1f;
+  background: var(--bg-sec);
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  color: #fefefe;
+  color: var(--text-clr-pri);
   font-size: 1rem;
   line-height: 1.6;
   padding: 0.75rem;
   outline: none;
-  border: 1px solid #383838;
+  border: 1px solid var(--text-clr-sec);
   resize: none;
 }
 
@@ -37,10 +37,14 @@
   outline: none;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+  background: var(--blue-clr);
+  color: var(--text-clr-pri);
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 .existing-comment {
-  background-color: #383838;
+  background-color: var(--text-clr-sec);
   padding: 1rem;
   border-radius: 1rem;
 
@@ -103,9 +107,9 @@
 }
 
 .likes-icon {
-  color: #006be6;
+  color: var(--blue-clr);
 }
 
 .dislikes-icon {
-  color: #aa4a44;
+  color: var(--dislike-clr);
 }
