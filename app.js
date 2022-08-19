@@ -4,7 +4,6 @@ const hamburger = document.querySelector('.hamburger')
 
 hamburger.addEventListener('click', () => {
   aside.classList.toggle('hide-aside')
-  content.classList.toggle('shift-content')
 })
 
 // overlay and modals
@@ -42,11 +41,29 @@ overlay.addEventListener('click', () => {
   signUpModal.classList.add('hidden')
 })
 
-// create post
+// dropdown nav
 
-const rules = document.querySelector('.rules')
-const rulesTitleContainer = document.querySelector('.rules-title-container')
+const user = document.querySelectorAll('.user')
+const dropdownNav = document.querySelector('.dropdown-nav')
+const overlay2 = document.querySelector('.overlay-2')
 
-rulesTitleContainer.addEventListener('click', () => {
-  rules.classList.toggle('show-rules')
+user.forEach(u => {
+  u.addEventListener('click', () => {
+    dropdownNav.classList.add('show-dropdown-nav')
+    overlay2.classList.remove('hidden')
+  })
+})
+
+overlay2.addEventListener('click', e => {
+  console.log(e.target)
+  dropdownNav.classList.remove('show-dropdown-nav')
+  overlay2.classList.add('hidden')
+})
+
+const dropdownNavSec = document.querySelector('.dropdown-nav-sec-links')
+
+const dropdownNavSecTitle = document.querySelector('.dropdown-nav-sec-title')
+
+dropdownNavSecTitle.addEventListener('click', () => {
+  dropdownNavSec.classList.toggle('show-dropdown-nav-sec-links')
 })

@@ -31,6 +31,7 @@
 
     <!-- scripts -->
     <script src="./app.js" defer></script>
+    <script src="./create-post.js" defer></script>
   </head>
   <body>
     <!-- navbar  -->
@@ -58,15 +59,55 @@
           <li class="user-main">
             <!-- user icon -->
             <div class="user">
-              <a href="./profile.html" class="nav-link"
-                ><i class="fa-solid fa-user user-icon"></i
-              ></a>
+              <i class="fa-solid fa-user user-icon"></i>
 
               <!-- dropdown here -->
+              <div class="dropdown-nav">
+                <ul class="dropdown-links">
+                  <li>
+                    <a href="./profile.html" class="dropdown-link"
+                      >My Profile</a
+                    >
+                  </li>
+                  <li><a href="#" class="dropdown-link">My Saved</a></li>
+                  <li><a href="#" class="dropdown-link">Settings</a></li>
+                  <li class="dark-mode">
+                    <p class="dark-mode-text">Dark Mode</p>
+                    <div class="dark-mode-switch">
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li><a href="#" class="dropdown-link">Download app</a></li>
+                  <li>
+                    <a href="#" class="dropdown-link">Help Center</a>
+                  </li>
+                  <li><a href="#" class="dropdown-link">Logout</a></li>
+
+                  <!-- inner dropdown -->
+
+                  <li class="dropdown-nav-sec">
+                    <div class="dropdown-nav-sec-title">
+                      <h4>Terms and Policies</h4>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <ul class="dropdown-nav-sec-links">
+                      <li>
+                        <a href="#" class="dropdown-nav-sec-link">Terms</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-nav-sec-link">Privacy</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-nav-sec-link">Copyrights</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li>
-            <a href="#" class="nav-link pri-btn"
+            <a href="./create-post.html" class="nav-link pri-btn"
               ><i class="fa-solid fa-pencil new-homepage-post"></i
               >&nbsp;&nbsp;post</a
             >
@@ -243,6 +284,206 @@
       </div>
     </div>
 
+    <div class="container">
+      <aside class="hide-aside">
+        <div class="sidebar">
+          <!-- aside links home -->
+          <div class="nav-mobile-links">
+            <a href="#" class="nav-link log-in nav-mobile-link">log in</a>
+            <a href="#" class="nav-link log-in nav-mobile-link">sign up</a>
+            <a
+              href="./create-post.html"
+              class="nav-link pri-btn nav-mobile-link"
+              ><i class="fa-solid fa-pencil new-post"></i>&nbsp;&nbsp;post</a
+            >
+          </div>
+
+          <h3 class="links-title">FlatMint</h3>
+          <ul class="sidebar-links">
+            <li>
+              <a href="#" class="sidebar-link"
+                ><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;hot</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sidebar-link"
+                ><i class="fa-solid fa-arrow-trend-up"></i
+                >&nbsp;&nbsp;&nbsp;trending</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sidebar-link"
+                ><i class="fa-solid fa-arrow-rotate-right"></i
+                >&nbsp;&nbsp;&nbsp;fresh</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sidebar-link"
+                ><i class="fa-solid fa-chart-simple"></i
+                >&nbsp;&nbsp;&nbsp;top</a
+              >
+            </li>
+          </ul>
+
+          <!-- aside links popular -->
+          <h3 class="links-title">popular</h3>
+          <ul class="sidebar-links">
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >trending<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >fresh<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >top<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >trending<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >fresh<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >top<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+          </ul>
+
+          <!-- aside links all section -->
+          <h3 class="links-title">All sections</h3>
+          <ul class="sidebar-links">
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >trending<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >fresh<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >top<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >trending<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >fresh<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >top<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >trending<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >fresh<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >top<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >hot<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >trending<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >fresh<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >top<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >trending<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >fresh<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link sidebar-link-2"
+                >top<i class="fa-solid fa-star star"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
     <div class="overlay hidden"></div>
+    <div class="overlay-2 hidden"></div>
   </body>
 </html>
