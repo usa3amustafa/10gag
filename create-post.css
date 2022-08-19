@@ -37,7 +37,7 @@
 }
 
 .show-choose-section-dropdown {
-  height: 70vh;
+  height: 60vh;
   padding: 1rem;
   border: 1px solid var(--text-clr-sec);
   overflow: scroll;
