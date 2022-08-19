@@ -1,0 +1,267 @@
+.create-post {
+  width: 90%;
+  max-width: 1000px;
+  margin: 8rem auto;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  align-items: flex-start;
+  column-gap: 2rem;
+}
+
+.create-post-left-col-title {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.choose-section {
+  border: 1px solid #3a3a3a;
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+
+.choose-section i {
+  color: #3a3a3a;
+}
+
+.caret-down {
+  margin-right: 0.5rem;
+}
+
+.choose-section-input {
+  flex: 1;
+  background-color: #141414;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  color: #fefefe;
+}
+
+.upload-post-form {
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  padding: 2rem;
+
+  margin-top: 1rem;
+}
+
+.upload-post-title {
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title-length {
+  color: #3a3a3a;
+}
+
+.upload-post-title-input {
+  flex: 1;
+  background-color: #141414;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #050505;
+  padding: 2rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+}
+
+.image-icon {
+  font-size: 3rem;
+}
+
+.file-upload-desc {
+  margin: 1rem 0;
+}
+
+.choose-file-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: #006be6;
+  color: #fefefe;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+}
+
+.upload-post-or {
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: #3a3a3a;
+}
+
+.paste-url {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.paste-url-input {
+  background: #141414;
+  border: 1px solid #3a3a3a;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  width: 300px;
+  color: #fefefe;
+}
+
+.btn-grey {
+  background: #3a3a3a;
+  color: #fefefe;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.create-post-tags {
+  margin-top: 1rem;
+}
+
+.create-post-tags-input {
+  width: 100%;
+  background-color: #141414;
+  padding: 1rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #fefefe;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+}
+
+input:focus-within {
+  outline: none;
+}
+
+.submit-post-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-icon {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.submit-post-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: #006be6;
+  color: #fefefe;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+}
+
+.rules-main {
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+}
+
+.rules-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+}
+
+.rules-title {
+  font-size: 1rem;
+}
+
+.rules {
+  height: 0px;
+  overflow: hidden;
+}
+
+.rules p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.rules p:last-child {
+  margin-bottom: 0rem;
+}
+
+.show-rules {
+  height: auto;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+@media (max-width: 1280px) {
+  .create-post {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+@media (max-width: 920px) {
+  .create-post {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 625px) {
+  .choose-section {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .upload-post-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .rules-main {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .paste-url {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  input {
+    max-width: 200px;
+  }
+}
+@media (max-width: 390px) {
+  input {
+    max-width: 150px;
+  }
+}

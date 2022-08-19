@@ -41,3 +41,12 @@ overlay.addEventListener('click', () => {
   logInModal.classList.add('hidden')
   signUpModal.classList.add('hidden')
 })
+
+// create post
+
+const rules = document.querySelector('.rules')
+const rulesTitleContainer = document.querySelector('.rules-title-container')
+
+rulesTitleContainer.addEventListener('click', () => {
+  rules.classList.toggle('show-rules')
+})

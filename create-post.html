@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlatMint</title>
+
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- homepage.css -->
+    <link rel="stylesheet" href="create-post.css" />
+
+    <!-- scripts -->
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav>
+      <div class="container nav">
+        <ul class="nav-links-left">
+          <i class="fa-solid fa-bars hamburger"></i>
+          <li>
+            <a href="./index.html" class="nav-link"
+              ><h2 class="logo">FlatMint</h2></a
+            >
+          </li>
+        </ul>
+        <div class="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search Your Favourite"
+          />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <ul class="nav-links-right">
+          <li><a href="#" class="nav-link log-in">Login/Sign Up</a></li>
+
+          <li class="user-main">
+            <!-- user icon -->
+            <div class="user">
+              <a href="./profile.html" class="nav-link"
+                ><i class="fa-solid fa-user user-icon"></i
+              ></a>
+
+              <!-- dropdown here -->
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nav-link pri-btn"
+              ><i class="fa-solid fa-pencil new-homepage-post"></i
+              >&nbsp;&nbsp;post</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- create post  -->
+    <div class="create-post">
+      <div class="create-post-left-col">
+        <h2 class="create-post-left-col-title">Upload a post</h2>
+
+        <!-- select list -->
+        <div class="choose-section">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            class="choose-section-input"
+            placeholder="Choose Section"
+          />
+
+          <i class="fa-solid fa-caret-down caret-down"></i>
+        </div>
+
+        <div class="upload-post-form">
+          <div class="upload-post-title">
+            <input
+              type="text"
+              placeholder="Title"
+              class="upload-post-title-input"
+            />
+            <p class="title-length">280</p>
+          </div>
+
+          <div class="file-upload">
+            <i class="fa-solid fa-image image-icon"></i>
+
+            <p class="file-upload-desc">Drop photo or video to upload</p>
+
+            <button class="btn choose-file-btn">Choose File...</button>
+
+            <p class="upload-post-or">or</p>
+
+            <div class="paste-url">
+              <input
+                type="text"
+                class="paste-url-input"
+                placeholder="Paste image or video URL"
+              />
+
+              <button class="btn btn-grey">
+                <i class="fa-solid fa-clipboard"></i> Paste
+              </button>
+            </div>
+          </div>
+
+          <div class="create-post-tags">
+            <input
+              type="text"
+              class="create-post-tags-input"
+              placeholder="+ Add tags to help people find your post"
+            />
+          </div>
+
+          <div class="submit-post-controls">
+            <div class="setting">
+              <i class="fa-solid fa-gear setting-icon"></i>
+            </div>
+
+            <button class="submit-post-btn">Submit post</button>
+          </div>
+        </div>
+      </div>
+      <div class="create-post-right-col">
+        <div class="rules-main">
+          <div class="rules-title-container">
+            <h2 class="rules-title">FlatMint Rules</h2>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div class="rules">
+            <p>1.&nbsp; No pornography</p>
+            <p>2.&nbsp; No violence or gory contents</p>
+            <p>3.&nbsp; No hate speech and bullying</p>
+            <p>4.&nbsp; No spamming and manipulation</p>
+            <p>5.&nbsp; No deceptive content</p>
+            <p>6.&nbsp; No illegal activities</p>
+            <p>7.&nbsp; No impersonation</p>
+            <p>8.&nbsp; No copyright infringement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign up modal -->
+    <div class="modal signup-modal hidden">
+      <i class="fa-solid fa-xmark signup-close-modal"></i>
+
+      <h3 class="modal-logo">FlatMint</h3>
+      <p class="modal-tagline">
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
+      </p>
+
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <p class="modal-disclaimer-line">
+        By continuing, you agree to 9GAG's Terms of Service and acknowledge that
+        you've read our Privacy Policy
+      </p>
+
+      <div class="continue-with">
+        <p class="continue-with-desc continue-with-facebook">
+          continue with Facebook
+        </p>
+      </div>
+      <div class="continue-with">
+        <p class="continue-with-desc continue-with-google">
+          continue with google
+        </p>
+      </div>
+      <div class="continue-with">
+        <p class="continue-with-desc continue-with-apple">
+          continue with apple
+        </p>
+      </div>
+      <div class="continue-with">
+        <p class="continue-with-desc continue-with-email">use email</p>
+      </div>
+
+      <a href="#" class="already-member">already a member? log in</a>
+    </div>
+
+    <!-- login modal -->
+    <div class="modal login-modal hidden">
+      <h2 class="login-title">
+        <i class="fa-solid fa-xmark login-close-modal"></i> Log In
+      </h2>
+
+      <h3 class="modal-logo">FlatMint</h3>
+
+      <div class="continue-with">
+        <p class="continue-with-desc continue-with-facebook">
+          continue with Facebook
+        </p>
+      </div>
+      <div class="continue-with">
+        <p class="continue-with-desc continue-with-google">
+          continue with google
+        </p>
+      </div>
+      <div class="continue-with">
+        <p class="continue-with-desc continue-with-apple">
+          continue with apple
+        </p>
+      </div>
+
+      <p class="or">OR</p>
+
+      <div class="login-form">
+        <input type="email" placeholder="Your Email" class="login-form-field" />
+        <input
+          type="password"
+          placeholder="Your Password"
+          class="login-form-field"
+        />
+        <button class="btn login-btn">Log In</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>
