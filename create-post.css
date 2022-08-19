@@ -21,6 +21,7 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 10px;
+  position: relative;
 }
 
 .choose-section i {
@@ -29,6 +30,12 @@
 
 .caret-down {
   margin-right: 0.5rem;
+
+  position: absolute;
+  top: 50%;
+  right: 2%;
+
+  transform: translateY(-50%);
 }
 
 .choose-section-input {
@@ -92,6 +99,7 @@
 
 .file-upload-desc {
   margin: 1rem 0;
+  text-align: center;
 }
 
 .choose-file-btn {
@@ -103,6 +111,8 @@
   color: #fefefe;
   border-radius: 2rem;
   font-size: 0.9rem;
+  border: none;
+  outline: none;
 }
 
 .upload-post-or {
@@ -184,6 +194,8 @@ input:focus-within {
   color: #fefefe;
   border-radius: 2rem;
   font-size: 0.9rem;
+  border: none;
+  outline: none;
 }
 
 .rules-main {
@@ -257,10 +269,26 @@ input:focus-within {
 
 @media (max-width: 500px) {
   input {
-    max-width: 200px;
+    max-width: 250px;
+  }
+  .create-post-tags-input {
+    max-width: 100%;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
+  input {
+    max-width: 200px;
+  }
+  .upload-post-form {
+    padding: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  input {
+    max-width: 190px;
+  }
+}
+@media (max-width: 320px) {
   input {
     max-width: 150px;
   }
